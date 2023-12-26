@@ -1,8 +1,9 @@
 <?php
 
-use App\Livewire\CustomerCreate;
 use App\Livewire\CustomerEdit;
+use App\Livewire\CustomerView;
 use App\Livewire\CustomerIndex;
+use App\Livewire\CustomerCreate;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +24,5 @@ Route::get('/', function () {
 
 Route::get('index', CustomerIndex::class);
 Route::get('create', CustomerCreate::class);
-Route::get('/edit/{customer}', CustomerEdit::class)->name('edit');
+Route::get('view/{customer}', CustomerView::class)->name('view');
+Route::get('edit/{customer}', CustomerEdit::class)->name('edit');

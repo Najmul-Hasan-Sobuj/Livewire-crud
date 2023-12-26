@@ -24,6 +24,7 @@ class CustomerCreate extends Component
         $this->validateOnly($propertyName, $this->validationRules());
     }
 
+
     /**
      * Store a new customer in the database.
      */

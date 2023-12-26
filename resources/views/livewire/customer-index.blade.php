@@ -30,9 +30,8 @@
                          <td>{{ $customer->email }}</td>
                          <td>{{ $customer->phone }}</td>
                          <td class="text-center">
-                             <button wire:click="view({{ $customer->id }})" class="btn btn-sm btn-info">View</button>
-                             <a href="{{ route('edit', $customer->id) }}"
-                                 class="btn btn-sm btn-primary">Edit</a>
+                             <a wire:naviagate href="/view/{{ $customer->id }}" class="btn btn-sm btn-info">View</a>
+                             <a href="{{ route('edit', $customer->id) }}" class="btn btn-sm btn-primary">Edit</a>
                              <button wire:click="delete({{ $customer->id }})"
                                  class="btn btn-sm btn-danger">Delete</button>
                          </td>

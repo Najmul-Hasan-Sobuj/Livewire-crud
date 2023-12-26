@@ -18,7 +18,7 @@ class CustomerIndex extends Component
     {
         $customer->delete();
         session()->flash('message', 'Customer deleted successfully.');
-        $this->customers = $this->customers->except($customer->id);
+        $this->loadCustomers();
     }
 
     public function render()
