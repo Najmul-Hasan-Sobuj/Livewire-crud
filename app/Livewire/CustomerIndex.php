@@ -23,7 +23,9 @@ class CustomerIndex extends Component
 
     public function render()
     {
-        return view('livewire.customer-index', ['customers' => $this->customers]);
+        return view('livewire.customer-index', [
+            'customers' =>  $this->loadCustomers(),
+        ]);
     }
 
     private function loadCustomers()
