@@ -38,11 +38,10 @@
                      </tr>
                  @empty
                      <tr>
-                         <td colspan="5">No customers available.</td>
+                         <td class="text-center" colspan="5">No customers available.</td>
                      </tr>
                  @endforelse
              </tbody>
          </table>
-         {{-- {{ $customers->links() }} <!-- Pagination Links --> --}}
      </div>
  </div>
